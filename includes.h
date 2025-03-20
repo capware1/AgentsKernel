@@ -1,13 +1,11 @@
 #pragma once
-
-
-
 //Driver Mains
 #include <ntifs.h>
 #include <ntddmou.h>
 #include <cstdint>
 #include <ntimage.h>
 
+inline UNICODE_STRING DeviceN, DosL;
 
 //Driver Cores
 #include "Driver Core/defintions/Define.h"

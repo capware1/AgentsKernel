@@ -1,0 +1,7 @@
+C:\Users\V\Source\Repos\RWH\RWH\Driver Core\IoControl\IoControl.cpp;C:\Users\V\Source\Repos\RWH\RWH\x64\Release\IoControl.obj
+C:\Users\V\Source\Repos\RWH\RWH\Driver Core\Utilities\Utility.cpp;C:\Users\V\Source\Repos\RWH\RWH\x64\Release\Utility.obj
+C:\Users\V\Source\Repos\RWH\RWH\Driver Entry\Driver Init\Driverinit.cpp;C:\Users\V\Source\Repos\RWH\RWH\x64\Release\Driverinit.obj
+C:\Users\V\Source\Repos\RWH\RWH\Driver Entry\Entry.cpp;C:\Users\V\Source\Repos\RWH\RWH\x64\Release\Entry.obj
+C:\Users\V\Source\Repos\RWH\RWH\Driver Functions\BaseAddress\Base.cpp;C:\Users\V\Source\Repos\RWH\RWH\x64\Release\Base.obj
+C:\Users\V\Source\Repos\RWH\RWH\Driver Functions\PML4\PML4.cpp;C:\Users\V\Source\Repos\RWH\RWH\x64\Release\PML4.obj
+C:\Users\V\Source\Repos\RWH\RWH\Driver Functions\Protect\Protect.cpp;C:\Users\V\Source\Repos\RWH\RWH\x64\Release\Protect.obj

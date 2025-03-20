@@ -58,7 +58,7 @@ namespace kli {
     }
 
     namespace cache {
-        uintptr_t kernel_base;
+        inline uintptr_t kernel_base;
     }
 
     namespace literals {
@@ -419,10 +419,9 @@ namespace kli {
         return address;
     }
 }
-
 #ifdef KLI_DISABLE_CACHE
 #define _(name) ((decltype(&##name))(::kli::find_kernel_export<KLI_HASH_STR(#name)>()))
 #else
-#define DImport(name) ((decltype(&##name))(::kli::find_kernel_export_cached<KLI_HASH_STR(#name)>()))
+#define Agents(name) ((decltype(&##name))(::kli::find_kernel_export_cached<KLI_HASH_STR(#name)>()))
 #endif
 #endif
