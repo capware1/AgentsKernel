@@ -1,4 +1,5 @@
 #include "../Includes.h"
+#define DEVICE_MODULE E(L"{a1f3b2c4-8d9e-4f7a-bc23-6e5d1a89f012}")
 
 
 NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)
@@ -7,9 +8,8 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)
 	NTSTATUS StatusResult = { };
 	PDEVICE_OBJECT deviceObj = { };
 
-
-	Agents(RtlInitUnicodeString)(&DeviceN, (L"\\Device\\{632114fa-6326-42b1-ba25-c03d1efda9ab}"));
-	Agents(RtlInitUnicodeString)(&DosL, (L"\\DosDevices\\{632114fa-6326-42b1-ba25-c03d1efda9ab}"));
+	DeviceN = Utility::ConcatenateStrings(E(L"\\Device\\"), DEVICE_MODULE);
+	DosL = Utility::ConcatenateStrings(E(L"\\DosDevices\\"), DEVICE_MODULE);
 
 	StatusResult = Agents(IoCreateDevice)(DriverObject, 0, &DeviceN, FILE_DEVICE_NETWORK, FILE_DEVICE_SECURE_OPEN, FALSE, &deviceObj);
 

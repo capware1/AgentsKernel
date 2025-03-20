@@ -1,8 +1,8 @@
 ﻿C:\Users\V\Source\Repos\RWH\RWH\RWH.vcxproj(67,5): warning MSB4011: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\10.0.26100.0\WindowsDriver.Shared.props (364,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
-C:\Users\V\Source\Repos\RWH\RWH\RWH.vcxproj(148,5): warning MSB4011: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\10.0.26100.0\WindowsDriver.common.targets (2016,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\V\Source\Repos\RWH\RWH\RWH.vcxproj(150,5): warning MSB4011: "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\10.0.26100.0\WindowsDriver.common.targets (2016,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
   Building 'RWH' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
   Stamping x64\Release\RWH.inf
-  Stamping [Version] section with DriverVer=03/20/2025,20.34.41.617
+  Stamping [Version] section with DriverVer=03/20/2025,21.9.15.220
   IoControl.cpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(61,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
   (compiling source file 'Driver%20Core/IoControl/IoControl.cpp')
@@ -25,9 +25,120 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.3480
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdint.h(16,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
   (compiling source file 'Driver%20Core/IoControl/IoControl.cpp')
   
-C:\Users\V\Source\Repos\RWH\RWH\Driver Core\IoControl\IoControl.cpp(11,9): warning C4189: 'ioCode': local variable is initialized but not referenced
-C:\Users\V\Source\Repos\RWH\RWH\Driver Core\IoControl\IoControl.cpp(12,9): warning C4189: 'inputSize': local variable is initialized but not referenced
-  RWH.vcxproj -> C:\Users\V\Source\Repos\RWH\x64\Release\HKernel.sys
-  Driver is 'Universal'.
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
+  Utility.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(61,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Core/Utilities/Utility.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(111,9): warning C4005: '_CRT_STRINGIZE': macro redefinition
+  (compiling source file 'Driver%20Core/Utilities/Utility.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(85,9):
+      see previous definition of '_CRT_STRINGIZE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(114,9): warning C4005: '_CRT_WIDE': macro redefinition
+  (compiling source file 'Driver%20Core/Utilities/Utility.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(88,9):
+      see previous definition of '_CRT_WIDE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(155,9): warning C4005: '__CRTDECL': macro redefinition
+  (compiling source file 'Driver%20Core/Utilities/Utility.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(640,9):
+      see previous definition of '__CRTDECL'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdint.h(16,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Core/Utilities/Utility.cpp')
+  
+C:\Users\V\Source\Repos\RWH\RWH\Driver Core\Utilities\Utility.cpp(26,72): warning C4100: 'str2': unreferenced formal parameter
+C:\Users\V\Source\Repos\RWH\RWH\Driver Core\Utilities\Utility.cpp(26,51): warning C4100: 'str1': unreferenced formal parameter
+  Driverinit.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(61,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Entry/Driver%20Init/Driverinit.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(111,9): warning C4005: '_CRT_STRINGIZE': macro redefinition
+  (compiling source file 'Driver%20Entry/Driver%20Init/Driverinit.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(85,9):
+      see previous definition of '_CRT_STRINGIZE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(114,9): warning C4005: '_CRT_WIDE': macro redefinition
+  (compiling source file 'Driver%20Entry/Driver%20Init/Driverinit.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(88,9):
+      see previous definition of '_CRT_WIDE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(155,9): warning C4005: '__CRTDECL': macro redefinition
+  (compiling source file 'Driver%20Entry/Driver%20Init/Driverinit.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(640,9):
+      see previous definition of '__CRTDECL'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdint.h(16,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Entry/Driver%20Init/Driverinit.cpp')
+  
+  Entry.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(61,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Entry/Entry.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(111,9): warning C4005: '_CRT_STRINGIZE': macro redefinition
+  (compiling source file 'Driver%20Entry/Entry.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(85,9):
+      see previous definition of '_CRT_STRINGIZE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(114,9): warning C4005: '_CRT_WIDE': macro redefinition
+  (compiling source file 'Driver%20Entry/Entry.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(88,9):
+      see previous definition of '_CRT_WIDE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(155,9): warning C4005: '__CRTDECL': macro redefinition
+  (compiling source file 'Driver%20Entry/Entry.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(640,9):
+      see previous definition of '__CRTDECL'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdint.h(16,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Entry/Entry.cpp')
+  
+C:\Users\V\Source\Repos\RWH\RWH\Driver Entry\Entry.cpp(5,67): warning C4100: 'RegistryPath': unreferenced formal parameter
+  Base.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(61,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Functions/BaseAddress/Base.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(111,9): warning C4005: '_CRT_STRINGIZE': macro redefinition
+  (compiling source file 'Driver%20Functions/BaseAddress/Base.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(85,9):
+      see previous definition of '_CRT_STRINGIZE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(114,9): warning C4005: '_CRT_WIDE': macro redefinition
+  (compiling source file 'Driver%20Functions/BaseAddress/Base.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(88,9):
+      see previous definition of '_CRT_WIDE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(155,9): warning C4005: '__CRTDECL': macro redefinition
+  (compiling source file 'Driver%20Functions/BaseAddress/Base.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(640,9):
+      see previous definition of '__CRTDECL'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdint.h(16,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Functions/BaseAddress/Base.cpp')
+  
+  PML4.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(61,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Functions/PML4/PML4.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(111,9): warning C4005: '_CRT_STRINGIZE': macro redefinition
+  (compiling source file 'Driver%20Functions/PML4/PML4.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(85,9):
+      see previous definition of '_CRT_STRINGIZE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(114,9): warning C4005: '_CRT_WIDE': macro redefinition
+  (compiling source file 'Driver%20Functions/PML4/PML4.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(88,9):
+      see previous definition of '_CRT_WIDE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime.h(155,9): warning C4005: '__CRTDECL': macro redefinition
+  (compiling source file 'Driver%20Functions/PML4/PML4.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(640,9):
+      see previous definition of '__CRTDECL'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stdint.h(16,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'Driver%20Functions/PML4/PML4.cpp')
+  
+C:\Users\V\Source\Repos\RWH\RWH\Driver Functions\PML4\PML4.cpp(122,46): warning C4018: '<': signed/unsigned mismatch
+C:\Users\V\Source\Repos\RWH\RWH\Driver Functions\PML4\PML4.cpp(186,30): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+C:\Users\V\Source\Repos\RWH\RWH\Driver Core\Utilities\Utility.cpp(29,1): error C4716: 'Utility::ConcatenateStrings': must return a value

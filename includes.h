@@ -9,6 +9,8 @@ inline UNICODE_STRING DeviceN, DosL;
 
 //Driver Cores
 #include "Driver Core/defintions/Define.h"
+#include "Driver Core/defintions/encrypt.h"
+#include "Driver Core/defintions/callstack.h"
 #include "Driver Core/defintions/IoCodes.h"
 #include "Driver Core/Utilities/Utility.h"
 

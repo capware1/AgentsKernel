@@ -76,7 +76,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
-    <TargetName>HKernel</TargetName>
+    <TargetName>AgentsKernel</TargetName>
     <EnableInf2cat>false</EnableInf2cat>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
@@ -133,7 +133,9 @@
     <ClCompile Include="Driver Functions\Protect\Protect.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Driver Core\defintions\callstack.h" />
     <ClInclude Include="Driver Core\defintions\Define.h" />
+    <ClInclude Include="Driver Core\defintions\encrypt.h" />
     <ClInclude Include="Driver Core\defintions\IoCodes.h" />
     <ClInclude Include="Driver Core\IoControl\IoControl.h" />
     <ClInclude Include="Driver Core\Utilities\Utility.h" />
